@@ -230,6 +230,7 @@ export default function App() {
             <DiscrepancyBreakdown
               counts={reconciliationData.counts}
               summary={reconciliationData.summary}
+              ambiguousMatchesCount={reconciliationData.ambiguous_matches?.length || 0}
               activeTab={activeTab}
               onSelectTab={setActiveTab}
             />

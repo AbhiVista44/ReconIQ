@@ -10,7 +10,13 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 
-export default function DiscrepancyBreakdown({ counts, summary, activeTab, onSelectTab }) {
+export default function DiscrepancyBreakdown({
+  counts,
+  summary,
+  ambiguousMatchesCount = 0,
+  activeTab,
+  onSelectTab
+}) {
   if (!counts) return null;
 
   const cards = [
@@ -62,7 +68,7 @@ export default function DiscrepancyBreakdown({ counts, summary, activeTab, onSel
     {
       id: 'AMBIGUOUS',
       title: 'Ambiguous Matches',
-      count: (counts.unmatched_gateway > 0 && counts.matched_pairs > 0 ? 1 : 0), // from ambiguous list
+      count: ambiguousMatchesCount,
       badgeColor: 'text-orange-400 bg-orange-500/10 border-orange-500/20',
       icon: HelpCircle,
       iconColor: 'text-orange-400',
