@@ -1,0 +1,12 @@
+{
+  "name": "reconiq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReconIQ – Smart Payment Reconciliation & Anomaly Detection Platform",
+  "scripts": {
+    "server": "npm.cmd --prefix server start",
+    "test:server": "npm.cmd --prefix server test",
+    "test": "npm.cmd --prefix server test"
+  }
+}
+

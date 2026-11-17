@@ -1,0 +1,19 @@
+{
+  "name": "reconiq-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ReconIQ Backend Reconciliation Engine",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "decimal.js": "^10.4.3",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "papaparse": "^5.4.1"
+  }
+}
+
